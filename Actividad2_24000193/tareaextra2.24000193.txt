@@ -1,0 +1,28 @@
+var usuario
+cu = alert (Math.floor( Math.random () * (11 - 1) + 1))
+cu2 = alert (Math.floor( Math.random () * (11 - 1) + 1))
+usuario == cu + cu2
+
+var oponente
+co = Math.floor( Math.random () * (11 - 1) + 1)
+co2 = Math.floor( Math.random () * (11 - 1) + 1)
+oponente == co + co2
+
+var carta = Math.floor( Math.random () * (11 - 1) + 1)
+
+
+  
+  while(usuario < 21 && oponente< 21);{
+   var opcion =  prompt ("¿Desea otra carta? por favor ingrese 1 para si o 0 para no");
+   if(opcion == 1){
+      usuario = usuario + alert(carta);
+      oponente = oponente + carta;
+     console.log("su nuevo total es", usuario);
+    }else if (usuario == oponente){
+      alert("Empate");
+    }else if(opcion == 0){
+      alert ("Perdiste");
+    }else if (usuario == 21 && oponente <21){
+      alert("Ganaste");
+    }
+  }
